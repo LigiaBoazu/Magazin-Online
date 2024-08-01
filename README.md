@@ -5,7 +5,7 @@ Aplicația utilizează serverul web Node.js, framework-ul Express și MySQL pent
 - admin: poate adăuga produse în baza de date.
 
 ## Structura Proiectului
-
+```
 Magazin-Online/
 ├── node_modules/                  # Conține pachetele necesare proiectului și este creat cu utilitarul npm
 ├── public/                        # Conține toate resursele accesibile direct de către client (e.g., fișiere css, javascript, imagini)
@@ -21,7 +21,8 @@ Magazin-Online/
 ├── app.js                         # Scriptul principal al aplicației, configurează serverul și rutele
 ├── intrebari.json                 # Fișier JSON care conține întrebările pentru chestionar
 ├── package-lock.json              
-└── package.json                   
+└── package.json        
+```           
 
 ## Pornirea serverului
 
