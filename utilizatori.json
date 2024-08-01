@@ -1,0 +1,5 @@
+[
+    { "username": "ligia", "password": "ligia", "varsta": "24", "access_role": 1},
+    { "username": "test", "password": "test", "varsta": "30", "access_role": 2},
+    { "username": "abc", "password": "abc", "varsta": "18", "access_role": 2}
+]

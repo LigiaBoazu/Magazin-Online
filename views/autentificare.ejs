@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autentificare</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <h1>Autentificare</h1>
+      <% if (typeof error !== 'undefined') { %>
+        <p style="color: red;"><%= error %></p>
+      <% } %>
+      <form action="/verificare-autentificare" method="POST">
+        <label for="utilizator">Utilizator:</label>
+        <input type="text" id="utilizator" name="utilizator" required>
+        <br>
+        <label for="parola">Parola:</label>
+        <input type="password" id="parola" name="parola" required>
+        <br>
+        <button type="submit">Autentificare</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+.main-container {
+    margin-top: 80px; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: url('https://freevector-images.s3.amazonaws.com/uploads/vector/preview/40954/FREEVECTOR-Flat-Chocolate-Background-Revisi-DP1221_generated.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.intrebare-container {
+    margin-bottom: 20px; 
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+    color: rgb(71, 42, 7);
+}
+
+.quiz-title {
+    color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+.intrebare-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.intrebare-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.results-container {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;  
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+.results-container p {
+    color: burlywood; 
+}
+
+.results-container h3 {
+    color: burlywood; 
+}
+
+.results-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.results-container a:hover {
+    background-color: #2980b9; 
+}
+
+.navbar .dropdown-menu {
+    display: none;  
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+.page-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    text-align: center;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+    padding: 20px;
+}
+  
+footer {
+    flex-shrink: 0;
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+}
+
+.content-wrapper h1 {
+    color: burlywood; 
+}
+  
+.content-wrapper label {
+    color: burlywood;
+}
+
+page-background h1 {
+    color: burlywood;
+}
+
+page-background .container {
+    background-color: rgba(165, 42, 42, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.page-background .container h1 {
+    color: rgb(248, 157, 37);
+}
+
+.page-background .container h2 {
+    color: rgb(248, 157, 37);
+}
+
+.page-background p {
+    color: rgb(248, 157, 37);
+}
+
+.page-background table {
+    background-color: white;
+    color: rgb(239, 143, 18);
+}
+
+.page-background table th {
+    background-color: wheat;
+}
+
+.page-background table td {
+    background-color: white;
+}
+
+page-background table tr {
+    background-color: white;
+}
+
+.page-background table tbody {
+    background-color: white;
+}
+
+.admin-page h1 {
+    color: burlywood;
+}
+
+.admin-page h1 strong {
+    color: brown;
+}
+
+.admin-page p {
+    color: burlywood;
+}
+

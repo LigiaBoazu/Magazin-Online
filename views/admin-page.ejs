@@ -1,0 +1,22 @@
+<div class="admin-page">
+<h1>Admin Dashboard. Ai acces aici pentru că ești <strong>ADMIN</strong>.</h1>
+<form action="/admin-add-product" method="post">
+    <div class="form-group">
+        <label for="productName">Nume produs</label>
+        <input type="text" class="form-control" id="productName" name="productName" required>
+    </div>
+    <div class="form-group">
+        <label for="productPrice">Preț</label>
+        <input type="number" class="form-control" id="productPrice" name="productPrice" step="0.01" required>
+    </div>
+    <div class="form-group">
+        <label for="productDescription">Descriere</label>
+        <textarea class="form-control" id="productDescription" name="productDescription"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="productSKU">SKU</label>
+        <input type="text" class="form-control" id="productSKU" name="productSKU" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Adaugă Produs</button>
+</form>
+</div>

@@ -1,0 +1,20 @@
+<div class="quiz-container">
+    <div class="quiz-title">
+        <h1>Câștigă un city-break în Belgia!</h1>
+        <p>Completează următorul formular pentru a intra în concurs:</p>
+    </div>  
+    <form action="/rezultat-chestionar" method="post">
+        <% intrebari.forEach((intrebare, index) => { %>
+            <div class="intrebare-container">
+                <p><%= index + 1 %>. <%= intrebare.intrebare %></p>
+                <% intrebare.variante.forEach((varianta, idx) => { %>
+                    <label>
+                        <input type="radio" name="intrebare_<%= index %>" value="<%= idx %>" <%= idx === 0 ? 'checked' : '' %> />
+                        <%= varianta %>
+                    </label>
+                <% }); %>
+            </div>
+        <% }); %>
+        <button type="submit">Trimite răspunsurile</button>
+    </form>
+</div>

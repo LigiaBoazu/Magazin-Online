@@ -1,0 +1,52 @@
+[
+    {
+        "intrebare": "Care este cel mai mare producător de cacao din lume?",
+        "variante": ["Ecuador", "Coasta de Fildeș", "Brazilia", "Ghana"],
+        "corect": 1
+    },
+    {
+        "intrebare": "În ce secol a apărut ciocolata în Europa?",
+        "variante": ["14", "15", "16", "17"],
+        "corect": 2
+    },
+    {
+        "intrebare": "Cuvântul ciocolată este de origine:",
+        "variante": ["Germană", "Franceză", "Aztecă", "Persană"],
+        "corect": 2
+    },
+    {
+        "intrebare": "Sub ce formă a fost ciocolata consumată pentru prima dată?",
+        "variante": ["Solidă", "Lichidă", "Pudră", "Pastă"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Ce companie a inventat ciocolata albă?",
+        "variante": ["Nestle", "Milka", "Lindt", "Heidi"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Care este cel mai recent tip de ciocolată apărută?",
+        "variante": ["Albă", "Ruby", "Amară", "Cu alune"],
+        "corect": 1
+    },
+    {
+        "intrebare": "Care este cel mai mare exportator de ciocoaltă din lume?",
+        "variante": ["Belgia", "Elveția", "SUA", "Germania"],
+        "corect": 3
+    },
+    {
+        "intrebare": "Ce tip de ciocolată nu conține cofeină?",
+        "variante": ["Albă", "Amară", "Cu lichior", "Cu lapte"],
+        "corect": 0
+    },
+    {
+        "intrebare": "Ce invenție a apărut datorită ciocolatei?",
+        "variante": ["Frigiderul", "Fierbătorul", "Cuptorul cu microunde", "Aragazul"],
+        "corect": 2
+    },
+    {
+        "intrebare": "Ce țară consumă cea mai mare cantitate de ciocolată?",
+        "variante": ["Germania", "Elveția", "Belgia", "Rusia"],
+        "corect": 2
+    }
+]

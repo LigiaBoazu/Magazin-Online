@@ -1,0 +1,41 @@
+<div class="page-background">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h1 class="text-center mb-4">Coșul meu</h1>
+            <% if (typeof session.cart !== 'undefined' && session.cart.length > 0) { %>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Produs</th>
+                            <th>Cantitate</th>
+                            <th>Preț</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% let totalPrice = 0; %>
+                        <% session.cart.forEach((item) => { %>
+                            <tr>
+                                <td><%= item.name %></td>
+                                <td><%= item.quantity %></td>
+                                <td>$<%= item.price %></td>
+                                <td>$<%= (item.price * item.quantity).toFixed(2) %></td>
+                            </tr>
+                            <% totalPrice += item.price * item.quantity; %>
+                        <% }) %>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3">Total:</th>
+                            <th>$<%= totalPrice.toFixed(2) %></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            <% } else { %>
+                <p>Coșul este gol.</p>
+            <% } %>
+        </div>
+    </div>
+</div>
+</div>

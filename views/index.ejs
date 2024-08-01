@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bucătăria Ligiei</title>
+</head>
+<body class="page-background">
+  <div class="header-container">
+    <h1>Bucătăria Ligiei</h1>
+  </div>
+
+  <div class="welcome-container">
+    <% if (typeof username !== 'undefined' && username && username.trim() !== '') { %>
+      <p>Welcome, <%= username %>!</p>
+      <a href="/logout">Log Out</a>
+    <% } else { %>
+      <p>Welcome, Guest!</p>
+      <a href="/autentificare">Mergi la autentificare</a>
+    <% } %>
+  </div>
+
+  <div class="text-container">
+    <p>Din pasiune pentru dulciuri, vă invităm să descoperiți produsele noastre. Folosim cele mai bune ingrediente și cantități reduse de zahăr!</p>
+  </div>
+
+  <div class="header-container">
+    <h2>Produse</h2>
+  </div>
+  <% if (products && products.length > 0) { %>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <% products.forEach(function(product) { %>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><strong><%= product.name %></strong> - $<%= product.price %></h5>
+              <p class="card-text"><%= product.description || 'No description available.' %></p>
+              <% if (product.img_link) { %>
+                <img src="<%= product.img_link %>" class="card-img-top" alt="Image of <%= product.name %>" style="width:100%;height:auto;">
+              <% } else { %>
+                <p class="text-center">Imagine indisponibilă.</p>
+              <% } %>
+            </div>
+            <% if (typeof username !== 'undefined' && username && username.trim() !== '') { %>
+              <div class="card-footer">
+                <form action="/adauga-cos" method="POST">
+                  <input type="hidden" name="productId" value="<%= product.id %>">
+                  <input type="hidden" name="productName" value="<%= product.name %>">
+                  <input type="hidden" name="productPrice" value="<%= product.price %>">
+                  <button type="submit" class="btn btn-primary btn-block">Adaugă în coș</button>
+                </form>
+              </div>
+            <% } %>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  <% } else { %>
+    <p>Niciun produs găsit</p>
+  <% } %>
+
+  <% if (typeof message !== 'undefined' && message) { %>
+    <div class="alert alert-success" role="alert">
+      <%= message %>
+    </div>
+  <% } %>
+</body>
+</html>
